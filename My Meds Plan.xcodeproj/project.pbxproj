@@ -10,11 +10,15 @@
 		30360C1F1AF2B25600C1BFF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30360C1E1AF2B25600C1BFF2 /* main.m */; };
 		30360C221AF2B25600C1BFF2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30360C211AF2B25600C1BFF2 /* AppDelegate.m */; };
 		30360C251AF2B25600C1BFF2 /* My_Meds_Plan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30360C231AF2B25600C1BFF2 /* My_Meds_Plan.xcdatamodeld */; };
-		30360C281AF2B25600C1BFF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30360C271AF2B25600C1BFF2 /* ViewController.m */; };
 		30360C2B1AF2B25600C1BFF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30360C291AF2B25600C1BFF2 /* Main.storyboard */; };
 		30360C2D1AF2B25600C1BFF2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30360C2C1AF2B25600C1BFF2 /* Images.xcassets */; };
 		30360C301AF2B25600C1BFF2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30360C2E1AF2B25600C1BFF2 /* LaunchScreen.xib */; };
 		30360C3C1AF2B25600C1BFF2 /* My_Meds_PlanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30360C3B1AF2B25600C1BFF2 /* My_Meds_PlanTests.m */; };
+		30360C471AF2BB3A00C1BFF2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30360C461AF2BB3A00C1BFF2 /* MainViewController.m */; };
+		30360C4B1AF2BCF500C1BFF2 /* PlanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30360C491AF2BCF500C1BFF2 /* PlanTableViewCell.m */; };
+		30360C4C1AF2BCF500C1BFF2 /* PlanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30360C4A1AF2BCF500C1BFF2 /* PlanTableViewCell.xib */; };
+		30360C4F1AF3476600C1BFF2 /* AddMedicineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30360C4E1AF3476600C1BFF2 /* AddMedicineViewController.m */; };
+		DA320D46D01B4FE40642AF97 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE4F65838577B916EC1F2F6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +38,22 @@
 		30360C201AF2B25600C1BFF2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		30360C211AF2B25600C1BFF2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		30360C241AF2B25600C1BFF2 /* My_Meds_Plan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = My_Meds_Plan.xcdatamodel; sourceTree = "<group>"; };
-		30360C261AF2B25600C1BFF2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		30360C271AF2B25600C1BFF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		30360C2A1AF2B25600C1BFF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30360C2C1AF2B25600C1BFF2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		30360C2F1AF2B25600C1BFF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		30360C351AF2B25600C1BFF2 /* My Meds PlanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Meds PlanTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30360C3A1AF2B25600C1BFF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30360C3B1AF2B25600C1BFF2 /* My_Meds_PlanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_Meds_PlanTests.m; sourceTree = "<group>"; };
+		30360C451AF2BB3A00C1BFF2 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		30360C461AF2BB3A00C1BFF2 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		30360C481AF2BCF500C1BFF2 /* PlanTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanTableViewCell.h; sourceTree = "<group>"; };
+		30360C491AF2BCF500C1BFF2 /* PlanTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanTableViewCell.m; sourceTree = "<group>"; };
+		30360C4A1AF2BCF500C1BFF2 /* PlanTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanTableViewCell.xib; sourceTree = "<group>"; };
+		30360C4D1AF3476600C1BFF2 /* AddMedicineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMedicineViewController.h; sourceTree = "<group>"; };
+		30360C4E1AF3476600C1BFF2 /* AddMedicineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMedicineViewController.m; sourceTree = "<group>"; };
+		ABE4F65838577B916EC1F2F6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5FB3F14F418490561500042 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D8FF6164D49EF87D0B415331 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA320D46D01B4FE40642AF97 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +81,8 @@
 				30360C1B1AF2B25600C1BFF2 /* My Meds Plan */,
 				30360C381AF2B25600C1BFF2 /* My Meds PlanTests */,
 				30360C1A1AF2B25600C1BFF2 /* Products */,
+				68B45859ED2833E93FB4A43E /* Pods */,
+				AE98BC39C8364C09B6335B87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,13 +100,18 @@
 			children = (
 				30360C201AF2B25600C1BFF2 /* AppDelegate.h */,
 				30360C211AF2B25600C1BFF2 /* AppDelegate.m */,
-				30360C261AF2B25600C1BFF2 /* ViewController.h */,
-				30360C271AF2B25600C1BFF2 /* ViewController.m */,
 				30360C291AF2B25600C1BFF2 /* Main.storyboard */,
 				30360C2C1AF2B25600C1BFF2 /* Images.xcassets */,
 				30360C2E1AF2B25600C1BFF2 /* LaunchScreen.xib */,
 				30360C231AF2B25600C1BFF2 /* My_Meds_Plan.xcdatamodeld */,
 				30360C1C1AF2B25600C1BFF2 /* Supporting Files */,
+				30360C451AF2BB3A00C1BFF2 /* MainViewController.h */,
+				30360C461AF2BB3A00C1BFF2 /* MainViewController.m */,
+				30360C481AF2BCF500C1BFF2 /* PlanTableViewCell.h */,
+				30360C491AF2BCF500C1BFF2 /* PlanTableViewCell.m */,
+				30360C4A1AF2BCF500C1BFF2 /* PlanTableViewCell.xib */,
+				30360C4D1AF3476600C1BFF2 /* AddMedicineViewController.h */,
+				30360C4E1AF3476600C1BFF2 /* AddMedicineViewController.m */,
 			);
 			path = "My Meds Plan";
 			sourceTree = "<group>";
@@ -122,6 +142,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		68B45859ED2833E93FB4A43E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8FF6164D49EF87D0B415331 /* Pods.debug.xcconfig */,
+				C5FB3F14F418490561500042 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE98BC39C8364C09B6335B87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABE4F65838577B916EC1F2F6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30360C3F1AF2B25600C1BFF2 /* Build configuration list for PBXNativeTarget "My Meds Plan" */;
 			buildPhases = (
+				5FE2A680991F1CEFA135E7C7 /* Check Pods Manifest.lock */,
 				30360C151AF2B25600C1BFF2 /* Sources */,
 				30360C161AF2B25600C1BFF2 /* Frameworks */,
 				30360C171AF2B25600C1BFF2 /* Resources */,
+				B76105722FA4517235F3D922 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30360C4C1AF2BCF500C1BFF2 /* PlanTableViewCell.xib in Resources */,
 				30360C2B1AF2B25600C1BFF2 /* Main.storyboard in Resources */,
 				30360C301AF2B25600C1BFF2 /* LaunchScreen.xib in Resources */,
 				30360C2D1AF2B25600C1BFF2 /* Images.xcassets in Resources */,
@@ -217,6 +257,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5FE2A680991F1CEFA135E7C7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B76105722FA4517235F3D922 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		30360C151AF2B25600C1BFF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -224,8 +297,10 @@
 			files = (
 				30360C221AF2B25600C1BFF2 /* AppDelegate.m in Sources */,
 				30360C1F1AF2B25600C1BFF2 /* main.m in Sources */,
-				30360C281AF2B25600C1BFF2 /* ViewController.m in Sources */,
 				30360C251AF2B25600C1BFF2 /* My_Meds_Plan.xcdatamodeld in Sources */,
+				30360C4B1AF2BCF500C1BFF2 /* PlanTableViewCell.m in Sources */,
+				30360C4F1AF3476600C1BFF2 /* AddMedicineViewController.m in Sources */,
+				30360C471AF2BB3A00C1BFF2 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +426,7 @@
 		};
 		30360C401AF2B25600C1BFF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8FF6164D49EF87D0B415331 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "My Meds Plan/Info.plist";
@@ -361,6 +437,7 @@
 		};
 		30360C411AF2B25600C1BFF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5FB3F14F418490561500042 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "My Meds Plan/Info.plist";
@@ -422,6 +499,7 @@
 				30360C411AF2B25600C1BFF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30360C421AF2B25600C1BFF2 /* Build configuration list for PBXNativeTarget "My Meds PlanTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +508,7 @@
 				30360C441AF2B25600C1BFF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

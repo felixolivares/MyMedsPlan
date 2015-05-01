@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PlanTableViewCell.h
 //  My Meds Plan
 //
 //  Created by Felix Olivares on 4/30/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PlanTableViewCell : UITableViewCell
 
 @end
-
