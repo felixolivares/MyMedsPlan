@@ -14,5 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *textFieldMedicineName;
 - (IBAction)unitsPerDose:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldUnitsPerDose;
+- (IBAction)medicineKind:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldMedicineKind;
 
 @end

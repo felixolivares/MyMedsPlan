@@ -37,7 +37,7 @@
 
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
-    if (textField.tag == 101 || textField.tag == 102) {
+    if (textField.tag == 101 || textField.tag == 102 || textField.tag == 103) {
         return NO;
     }else{
         return YES;
@@ -72,6 +72,23 @@
                                            NSLog(@"Selected Index: %ld", (long)selectedIndex);
                                            NSLog(@"Selected Value: %@", selectedValue);
                                            self.textFieldUnitsPerDose.text = selectedValue;
+                                       }
+                                     cancelBlock:^(ActionSheetStringPicker *picker) {
+                                         NSLog(@"Block Picker Canceled");
+                                     }
+                                          origin:sender];
+}
+- (IBAction)medicineKind:(id)sender {
+    NSArray *colors = [NSArray arrayWithObjects:@"Pills", @"Dropplets", @"Tablets", @"Tea Spoons", @"Shots", nil];
+    
+    [ActionSheetStringPicker showPickerWithTitle:@"Select what kind"
+                                            rows:colors
+                                initialSelection:0
+                                       doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
+                                           NSLog(@"Picker: %@", picker);
+                                           NSLog(@"Selected Index: %ld", (long)selectedIndex);
+                                           NSLog(@"Selected Value: %@", selectedValue);
+                                           self.textFieldMedicineKind.text = selectedValue;
                                        }
                                      cancelBlock:^(ActionSheetStringPicker *picker) {
                                          NSLog(@"Block Picker Canceled");

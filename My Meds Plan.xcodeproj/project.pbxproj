@@ -18,6 +18,7 @@
 		30360C4B1AF2BCF500C1BFF2 /* PlanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30360C491AF2BCF500C1BFF2 /* PlanTableViewCell.m */; };
 		30360C4C1AF2BCF500C1BFF2 /* PlanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30360C4A1AF2BCF500C1BFF2 /* PlanTableViewCell.xib */; };
 		30360C4F1AF3476600C1BFF2 /* AddMedicineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30360C4E1AF3476600C1BFF2 /* AddMedicineViewController.m */; };
+		30360C541AF3EC2300C1BFF2 /* Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = 30360C521AF3EC2300C1BFF2 /* Plan.m */; };
 		DA320D46D01B4FE40642AF97 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE4F65838577B916EC1F2F6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,8 @@
 		30360C4A1AF2BCF500C1BFF2 /* PlanTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanTableViewCell.xib; sourceTree = "<group>"; };
 		30360C4D1AF3476600C1BFF2 /* AddMedicineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMedicineViewController.h; sourceTree = "<group>"; };
 		30360C4E1AF3476600C1BFF2 /* AddMedicineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMedicineViewController.m; sourceTree = "<group>"; };
+		30360C511AF3EC2300C1BFF2 /* Plan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plan.h; path = "My Meds Plan/Plan.h"; sourceTree = "<group>"; };
+		30360C521AF3EC2300C1BFF2 /* Plan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Plan.m; path = "My Meds Plan/Plan.m"; sourceTree = "<group>"; };
 		ABE4F65838577B916EC1F2F6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5FB3F14F418490561500042 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D8FF6164D49EF87D0B415331 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +101,7 @@
 		30360C1B1AF2B25600C1BFF2 /* My Meds Plan */ = {
 			isa = PBXGroup;
 			children = (
+				30360C531AF3EC2300C1BFF2 /* Entiti */,
 				30360C201AF2B25600C1BFF2 /* AppDelegate.h */,
 				30360C211AF2B25600C1BFF2 /* AppDelegate.m */,
 				30360C291AF2B25600C1BFF2 /* Main.storyboard */,
@@ -140,6 +144,16 @@
 				30360C3A1AF2B25600C1BFF2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30360C531AF3EC2300C1BFF2 /* Entiti */ = {
+			isa = PBXGroup;
+			children = (
+				30360C511AF3EC2300C1BFF2 /* Plan.h */,
+				30360C521AF3EC2300C1BFF2 /* Plan.m */,
+			);
+			name = Entiti;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		68B45859ED2833E93FB4A43E /* Pods */ = {
@@ -298,6 +312,7 @@
 				30360C221AF2B25600C1BFF2 /* AppDelegate.m in Sources */,
 				30360C1F1AF2B25600C1BFF2 /* main.m in Sources */,
 				30360C251AF2B25600C1BFF2 /* My_Meds_Plan.xcdatamodeld in Sources */,
+				30360C541AF3EC2300C1BFF2 /* Plan.m in Sources */,
 				30360C4B1AF2BCF500C1BFF2 /* PlanTableViewCell.m in Sources */,
 				30360C4F1AF3476600C1BFF2 /* AddMedicineViewController.m in Sources */,
 				30360C471AF2BB3A00C1BFF2 /* MainViewController.m in Sources */,
