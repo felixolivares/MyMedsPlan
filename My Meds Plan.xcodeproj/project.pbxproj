@@ -15,10 +15,9 @@
 		30360C301AF2B25600C1BFF2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30360C2E1AF2B25600C1BFF2 /* LaunchScreen.xib */; };
 		30360C3C1AF2B25600C1BFF2 /* My_Meds_PlanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30360C3B1AF2B25600C1BFF2 /* My_Meds_PlanTests.m */; };
 		30360C471AF2BB3A00C1BFF2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30360C461AF2BB3A00C1BFF2 /* MainViewController.m */; };
-		30360C4B1AF2BCF500C1BFF2 /* PlanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30360C491AF2BCF500C1BFF2 /* PlanTableViewCell.m */; };
-		30360C4C1AF2BCF500C1BFF2 /* PlanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30360C4A1AF2BCF500C1BFF2 /* PlanTableViewCell.xib */; };
 		30360C4F1AF3476600C1BFF2 /* AddMedicineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30360C4E1AF3476600C1BFF2 /* AddMedicineViewController.m */; };
-		30360C541AF3EC2300C1BFF2 /* Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = 30360C521AF3EC2300C1BFF2 /* Plan.m */; };
+		30C48F101AF5409C007F5D32 /* Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C48F0F1AF5409C007F5D32 /* Plan.m */; };
+		30E644A01AF7ED4C003872A3 /* PlanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E6449F1AF7ED4C003872A3 /* PlanTableViewCell.m */; };
 		DA320D46D01B4FE40642AF97 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE4F65838577B916EC1F2F6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -47,13 +46,13 @@
 		30360C3B1AF2B25600C1BFF2 /* My_Meds_PlanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_Meds_PlanTests.m; sourceTree = "<group>"; };
 		30360C451AF2BB3A00C1BFF2 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		30360C461AF2BB3A00C1BFF2 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		30360C481AF2BCF500C1BFF2 /* PlanTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanTableViewCell.h; sourceTree = "<group>"; };
-		30360C491AF2BCF500C1BFF2 /* PlanTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanTableViewCell.m; sourceTree = "<group>"; };
-		30360C4A1AF2BCF500C1BFF2 /* PlanTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanTableViewCell.xib; sourceTree = "<group>"; };
 		30360C4D1AF3476600C1BFF2 /* AddMedicineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMedicineViewController.h; sourceTree = "<group>"; };
 		30360C4E1AF3476600C1BFF2 /* AddMedicineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMedicineViewController.m; sourceTree = "<group>"; };
-		30360C511AF3EC2300C1BFF2 /* Plan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plan.h; path = "My Meds Plan/Plan.h"; sourceTree = "<group>"; };
-		30360C521AF3EC2300C1BFF2 /* Plan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Plan.m; path = "My Meds Plan/Plan.m"; sourceTree = "<group>"; };
+		30360C551AF3FCE300C1BFF2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		30C48F0E1AF5409C007F5D32 /* Plan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plan.h; sourceTree = "<group>"; };
+		30C48F0F1AF5409C007F5D32 /* Plan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plan.m; sourceTree = "<group>"; };
+		30E6449E1AF7ED4C003872A3 /* PlanTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanTableViewCell.h; sourceTree = "<group>"; };
+		30E6449F1AF7ED4C003872A3 /* PlanTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanTableViewCell.m; sourceTree = "<group>"; };
 		ABE4F65838577B916EC1F2F6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5FB3F14F418490561500042 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D8FF6164D49EF87D0B415331 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +100,7 @@
 		30360C1B1AF2B25600C1BFF2 /* My Meds Plan */ = {
 			isa = PBXGroup;
 			children = (
-				30360C531AF3EC2300C1BFF2 /* Entiti */,
+				30360C531AF3EC2300C1BFF2 /* Entities */,
 				30360C201AF2B25600C1BFF2 /* AppDelegate.h */,
 				30360C211AF2B25600C1BFF2 /* AppDelegate.m */,
 				30360C291AF2B25600C1BFF2 /* Main.storyboard */,
@@ -111,11 +110,10 @@
 				30360C1C1AF2B25600C1BFF2 /* Supporting Files */,
 				30360C451AF2BB3A00C1BFF2 /* MainViewController.h */,
 				30360C461AF2BB3A00C1BFF2 /* MainViewController.m */,
-				30360C481AF2BCF500C1BFF2 /* PlanTableViewCell.h */,
-				30360C491AF2BCF500C1BFF2 /* PlanTableViewCell.m */,
-				30360C4A1AF2BCF500C1BFF2 /* PlanTableViewCell.xib */,
 				30360C4D1AF3476600C1BFF2 /* AddMedicineViewController.h */,
 				30360C4E1AF3476600C1BFF2 /* AddMedicineViewController.m */,
+				30E6449E1AF7ED4C003872A3 /* PlanTableViewCell.h */,
+				30E6449F1AF7ED4C003872A3 /* PlanTableViewCell.m */,
 			);
 			path = "My Meds Plan";
 			sourceTree = "<group>";
@@ -125,6 +123,7 @@
 			children = (
 				30360C1D1AF2B25600C1BFF2 /* Info.plist */,
 				30360C1E1AF2B25600C1BFF2 /* main.m */,
+				30360C551AF3FCE300C1BFF2 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -146,13 +145,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		30360C531AF3EC2300C1BFF2 /* Entiti */ = {
+		30360C531AF3EC2300C1BFF2 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				30360C511AF3EC2300C1BFF2 /* Plan.h */,
-				30360C521AF3EC2300C1BFF2 /* Plan.m */,
+				30C48F0E1AF5409C007F5D32 /* Plan.h */,
+				30C48F0F1AF5409C007F5D32 /* Plan.m */,
 			);
-			name = Entiti;
+			name = Entities;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -255,7 +254,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30360C4C1AF2BCF500C1BFF2 /* PlanTableViewCell.xib in Resources */,
 				30360C2B1AF2B25600C1BFF2 /* Main.storyboard in Resources */,
 				30360C301AF2B25600C1BFF2 /* LaunchScreen.xib in Resources */,
 				30360C2D1AF2B25600C1BFF2 /* Images.xcassets in Resources */,
@@ -309,11 +307,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30E644A01AF7ED4C003872A3 /* PlanTableViewCell.m in Sources */,
 				30360C221AF2B25600C1BFF2 /* AppDelegate.m in Sources */,
 				30360C1F1AF2B25600C1BFF2 /* main.m in Sources */,
 				30360C251AF2B25600C1BFF2 /* My_Meds_Plan.xcdatamodeld in Sources */,
-				30360C541AF3EC2300C1BFF2 /* Plan.m in Sources */,
-				30360C4B1AF2BCF500C1BFF2 /* PlanTableViewCell.m in Sources */,
+				30C48F101AF5409C007F5D32 /* Plan.m in Sources */,
 				30360C4F1AF3476600C1BFF2 /* AddMedicineViewController.m in Sources */,
 				30360C471AF2BB3A00C1BFF2 /* MainViewController.m in Sources */,
 			);
@@ -444,6 +442,7 @@
 			baseConfigurationReference = D8FF6164D49EF87D0B415331 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "My Meds Plan/PrefixHeader.pch";
 				INFOPLIST_FILE = "My Meds Plan/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -455,6 +454,7 @@
 			baseConfigurationReference = C5FB3F14F418490561500042 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "My Meds Plan/PrefixHeader.pch";
 				INFOPLIST_FILE = "My Meds Plan/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

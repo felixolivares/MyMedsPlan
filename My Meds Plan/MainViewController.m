@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "PlanTableViewCell.h"
+#import "Plan.h"
 
 static NSString *PlanCellIdentifier = @"PlanCellIdentifier";
 
@@ -16,12 +17,19 @@ static NSString *PlanCellIdentifier = @"PlanCellIdentifier";
 @end
 
 @implementation MainViewController
+@synthesize plan;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.tableView registerClass:[PlanTableViewCell class] forCellReuseIdentifier:PlanCellIdentifier];
     
+    self.myResults = [Plan MR_findAll];
+    
+    NSLog(@"%@", self.myResults);
+    
+//    plan = [self.myResults objectAtIndex:0];
+//    NSLog(@"Medicine name : %@", plan.medicationName);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,15 +46,30 @@ static NSString *PlanCellIdentifier = @"PlanCellIdentifier";
     return 1;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 100.0;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 2;
+    NSLog(@"count myResults %d", [self.myResults count]); 
+    return [self.myResults count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     PlanTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:PlanCellIdentifier];
 
+    // Initialize object containing contact info
+    Plan *eachPlan = [self.myResults objectAtIndex:indexPath.row];
+    NSLog(@"eachPlan name : %@", eachPlan.medicationName); 
+    
+    cell.nameLabel.text = [NSString stringWithFormat:@"%@", eachPlan.medicationName];
+    
+    [cell updateFonts];
+    [cell setNeedsUpdateConstraints];
+    [cell updateConstraintsIfNeeded];
+    
     return cell;
 }
 

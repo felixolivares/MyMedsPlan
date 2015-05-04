@@ -2,7 +2,7 @@
 //  Plan.m
 //  
 //
-//  Created by Felix Olivares on 5/1/15.
+//  Created by Felix Olivares on 5/2/15.
 //
 //
 
@@ -11,11 +11,11 @@
 
 @implementation Plan
 
-@dynamic medicationName;
-@dynamic fireDate;
 @dynamic additionalInfo;
+@dynamic fireDate;
+@dynamic medicationName;
+@dynamic medicineKind;
 @dynamic periodicity;
 @dynamic unitsPerDose;
-@dynamic medicineKind;
 
 @end

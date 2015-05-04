@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nTw-R8-THN">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -30,7 +31,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qlz-xW-Rcy">
@@ -99,6 +100,7 @@
                         <viewControllerLayoutGuide type="bottom" id="A6V-Uq-ynb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HIM-qi-78g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V87-8b-d9T">
@@ -107,7 +109,7 @@
                                     <constraint firstAttribute="width" constant="56" id="l91-YT-dQP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -147,7 +149,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need to take medicine every : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXz-V8-zNw">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QY8-4c-k0G">
@@ -175,7 +177,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Units per dose:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v95-7B-ZvM">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8AS-qZ-yD4">
@@ -203,13 +205,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hrs." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fK-lA-7K0">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kind:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQk-2e-F2d">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mG7-H0-0Kt">
@@ -239,7 +241,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Additional information:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dli-4U-0lX">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58x-cK-S6t">
@@ -260,6 +262,9 @@
                                         <include reference="MRi-mg-KGT"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="0AE-yg-ft6" id="OJV-FO-VDW"/>
+                                </connections>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -308,27 +313,27 @@
                                 <exclude reference="58x-cK-S6t"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="TUf-Ga-Xak"/>
-                                <exclude reference="fU0-Ct-tTb"/>
-                                <exclude reference="kDo-Ex-WW7"/>
+                                <exclude reference="VvZ-eq-XlI"/>
+                                <exclude reference="wRG-QC-DCd"/>
+                                <exclude reference="j6M-7u-dSv"/>
+                                <exclude reference="nO4-Jq-LUp"/>
+                                <exclude reference="Ggf-MQ-tnF"/>
+                                <exclude reference="jvF-MU-M48"/>
                                 <exclude reference="bRA-a3-1Ou"/>
                                 <exclude reference="xTy-d5-jFo"/>
                                 <exclude reference="zA7-8O-N1O"/>
-                                <exclude reference="LGR-Xt-qbF"/>
-                                <exclude reference="ryI-PU-q3g"/>
                                 <exclude reference="4Jc-RT-RsK"/>
                                 <exclude reference="kkS-9O-CU5"/>
+                                <exclude reference="TUf-Ga-Xak"/>
+                                <exclude reference="fU0-Ct-tTb"/>
+                                <exclude reference="kDo-Ex-WW7"/>
+                                <exclude reference="LGR-Xt-qbF"/>
+                                <exclude reference="ryI-PU-q3g"/>
                                 <exclude reference="iOB-x3-K3a"/>
                                 <exclude reference="q3Y-oz-L91"/>
-                                <exclude reference="j6M-7u-dSv"/>
-                                <exclude reference="nO4-Jq-LUp"/>
-                                <exclude reference="VvZ-eq-XlI"/>
-                                <exclude reference="wRG-QC-DCd"/>
                                 <exclude reference="FYQ-uq-f30"/>
                                 <exclude reference="Uyf-tI-xGM"/>
                                 <exclude reference="tJ4-uy-e2n"/>
-                                <exclude reference="Ggf-MQ-tnF"/>
-                                <exclude reference="jvF-MU-M48"/>
                                 <exclude reference="a90-fr-aJI"/>
                                 <exclude reference="aoL-Co-1gi"/>
                                 <exclude reference="lNs-uo-dcW"/>
@@ -349,39 +354,46 @@
                                 <include reference="58x-cK-S6t"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="TUf-Ga-Xak"/>
-                                <include reference="fU0-Ct-tTb"/>
-                                <include reference="kDo-Ex-WW7"/>
+                                <include reference="VvZ-eq-XlI"/>
+                                <include reference="wRG-QC-DCd"/>
+                                <include reference="j6M-7u-dSv"/>
+                                <include reference="nO4-Jq-LUp"/>
+                                <include reference="Ggf-MQ-tnF"/>
+                                <include reference="jvF-MU-M48"/>
                                 <include reference="bRA-a3-1Ou"/>
                                 <include reference="xTy-d5-jFo"/>
                                 <include reference="zA7-8O-N1O"/>
-                                <include reference="LGR-Xt-qbF"/>
-                                <include reference="ryI-PU-q3g"/>
                                 <include reference="4Jc-RT-RsK"/>
                                 <include reference="kkS-9O-CU5"/>
+                                <include reference="TUf-Ga-Xak"/>
+                                <include reference="fU0-Ct-tTb"/>
+                                <include reference="kDo-Ex-WW7"/>
+                                <include reference="LGR-Xt-qbF"/>
+                                <include reference="ryI-PU-q3g"/>
                                 <include reference="iOB-x3-K3a"/>
                                 <include reference="q3Y-oz-L91"/>
-                                <include reference="j6M-7u-dSv"/>
-                                <include reference="nO4-Jq-LUp"/>
-                                <include reference="VvZ-eq-XlI"/>
-                                <include reference="wRG-QC-DCd"/>
                                 <exclude reference="FYQ-uq-f30"/>
                                 <include reference="Uyf-tI-xGM"/>
                                 <include reference="tJ4-uy-e2n"/>
-                                <include reference="Ggf-MQ-tnF"/>
-                                <include reference="jvF-MU-M48"/>
                                 <include reference="a90-fr-aJI"/>
                                 <include reference="aoL-Co-1gi"/>
                                 <include reference="lNs-uo-dcW"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Medicine" id="05e-20-nPB"/>
+                    <navigationItem key="navigationItem" title="Add Medicine" id="05e-20-nPB">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="tlY-2a-EUu">
+                            <connections>
+                                <action selector="saveButton:" destination="0AE-yg-ft6" id="NpL-Bj-Utr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="textFieldMedicineEvery" destination="QY8-4c-k0G" id="OIE-PY-6FJ"/>
                         <outlet property="textFieldMedicineKind" destination="mG7-H0-0Kt" id="D8w-Pu-a6u"/>
                         <outlet property="textFieldMedicineName" destination="ID3-3C-Hv2" id="C3e-18-NAb"/>
                         <outlet property="textFieldUnitsPerDose" destination="8AS-qZ-yD4" id="FJO-16-f8e"/>
+                        <outlet property="textViewComments" destination="58x-cK-S6t" id="QIq-50-CbR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YR0-TH-TpU" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Plan.h"
 
-@interface MainViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface MainViewController : UIViewController <UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (weak, nonatomic) NSArray *myResults;
+@property (weak, nonatomic) Plan *plan;
 @end

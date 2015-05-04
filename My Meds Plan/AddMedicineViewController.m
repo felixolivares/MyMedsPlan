@@ -8,6 +8,8 @@
 
 #import "AddMedicineViewController.h"
 #import "ActionSheetStringPicker.h"
+#import "Plan.h"
+#import "AppDelegate.h"
 
 @interface AddMedicineViewController ()
 
@@ -23,6 +25,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    if (!self.plan) {
+        self.plan = [Plan MR_createEntity];
+    }
 }
 
 /*
@@ -95,4 +103,22 @@
                                      }
                                           origin:sender];
 }
+- (IBAction)saveButton:(id)sender {
+    [self saveContext];
+}
+
+- (void)saveContext {
+    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
+        Plan *localContextPlan = [Plan MR_createInContext:localContext];
+        
+        localContextPlan.medicationName = self.textFieldMedicineName.text;
+        localContextPlan.medicineKind = self.textFieldMedicineKind.text;
+        localContextPlan.unitsPerDose = [NSNumber numberWithInteger:[self.textFieldUnitsPerDose.text integerValue]];
+        localContextPlan.periodicity = [NSNumber numberWithInteger:[self.textFieldMedicineEvery.text integerValue]];
+        localContextPlan.additionalInfo = self.textViewComments.text;
+        
+        NSLog(@"Saved!");
+    }];
+}
+
 @end

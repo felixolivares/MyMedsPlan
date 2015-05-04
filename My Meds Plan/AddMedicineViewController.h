@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class Plan;
+
 @interface AddMedicineViewController : UIViewController <UITextFieldDelegate>
+
+@property (nonatomic,strong) Plan *plan;
+
 - (IBAction)medicineEvery:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldMedicineEvery;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldMedicineName;
@@ -16,5 +21,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *textFieldUnitsPerDose;
 - (IBAction)medicineKind:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldMedicineKind;
+- (IBAction)saveButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextView *textViewComments;
 
 @end
