@@ -7,10 +7,30 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BButton.h"
+#import "ZGCountDownTimer.h"
+#import "Plan.h"
+
 
 @interface PlanTableViewCell : UITableViewCell
 
+@property (strong, nonatomic) Plan *plan;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *doseLabel;
+@property (strong, nonatomic) IBOutlet UILabel *counter;
+@property (strong, nonatomic) IBOutlet UILabel *fireDateLabel;
+@property (strong, nonatomic) IBOutlet BButton *btn;
+@property (strong, nonatomic) IBOutlet BButton *btnRestart;
+@property (nonatomic, strong) ZGCountDownTimer *myCountDownTimer;
+@property (strong, nonatomic) NSNumber *seconds;
+@property (strong, nonatomic) NSString *myTimer;
+@property (strong, nonatomic) NSDate *counterFinishes;
+
+@property (strong, nonatomic) IBOutlet UILabel *nameTitleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *doseTitleLable;
+@property (strong, nonatomic) IBOutlet UILabel *fireDateTitleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *counterTitleLabel;
+
 
 -(void)updateFonts;
 

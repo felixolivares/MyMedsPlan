@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Plan.h"
 
-@interface MainViewController : UIViewController <UITableViewDelegate>
+@interface MainViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-@property (weak, nonatomic) NSArray *myResults;
-@property (weak, nonatomic) Plan *plan;
+@property (strong, nonatomic) NSArray *myResults;
+@property (strong, nonatomic) Plan *plan;
 @end

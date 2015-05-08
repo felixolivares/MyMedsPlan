@@ -28,8 +28,14 @@ static NSString *PlanCellIdentifier = @"PlanCellIdentifier";
     
     NSLog(@"%@", self.myResults);
     
+    [self.view setNeedsUpdateConstraints];
+    
 //    plan = [self.myResults objectAtIndex:0];
 //    NSLog(@"Medicine name : %@", plan.medicationName);
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [self.tableView reloadData]; 
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,25 +58,42 @@ static NSString *PlanCellIdentifier = @"PlanCellIdentifier";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"count myResults %d", [self.myResults count]); 
+    NSLog(@"count myResults %lu", (unsigned long)[self.myResults count]); 
     return [self.myResults count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    PlanTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:PlanCellIdentifier];
+//    PlanTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:PlanCellIdentifier];
+    
+    PlanTableViewCell *planCell = [tableView dequeueReusableCellWithIdentifier:PlanCellIdentifier];
+   
+//    planCell = [[PlanTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:PlanCellIdentifier];
 
     // Initialize object containing contact info
     Plan *eachPlan = [self.myResults objectAtIndex:indexPath.row];
     NSLog(@"eachPlan name : %@", eachPlan.medicationName); 
     
-    cell.nameLabel.text = [NSString stringWithFormat:@"%@", eachPlan.medicationName];
+    planCell.nameLabel.text = [NSString stringWithFormat:@"%@", eachPlan.medicationName];
+    planCell.doseLabel.text = [NSString stringWithFormat:@"%@ %@ every %@ hrs.", eachPlan.unitsPerDose, eachPlan.medicineKind, eachPlan.periodicity];
     
-    [cell updateFonts];
-    [cell setNeedsUpdateConstraints];
-    [cell updateConstraintsIfNeeded];
+    int hours = [eachPlan.periodicity intValue];
+    NSNumber *seconds = [NSNumber numberWithInt:hours*3600];
+    NSLog(@"seconds = %@", seconds); 
+    planCell.seconds = seconds;
     
-    return cell;
+    planCell.myTimer = [NSString stringWithFormat:@"myTimer%d", indexPath.row];
+    
+//    NSTimeInterval timeZoneSeconds = [[NSTimeZone localTimeZone] secondsFromGMT];
+//    planCell.counterFinishes = [[[NSDate date] dateByAddingTimeInterval:hours*60*60] dateByAddingTimeInterval:timeZoneSeconds];
+    
+    planCell.counterFinishes = [[NSDate date] dateByAddingTimeInterval:hours*60*60];
+    
+    [planCell updateFonts];
+    [planCell setNeedsUpdateConstraints];
+    [planCell updateConstraintsIfNeeded];
+    
+    return planCell;
 }
 
 /*
