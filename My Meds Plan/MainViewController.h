@@ -11,7 +11,11 @@
 
 @interface MainViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *editButtonProperty;
 
-@property (strong, nonatomic) NSArray *myResults;
+- (IBAction)editButton:(id)sender;
+@property (strong, nonatomic) NSMutableArray *myResults;
 @property (strong, nonatomic) Plan *plan;
+@property (strong, nonatomic) NSString *medNameToSend;
+@property (weak, nonatomic) IBOutlet UIView *backgroundView;
 @end

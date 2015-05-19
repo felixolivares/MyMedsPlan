@@ -2,7 +2,7 @@
 //  Plan.m
 //  
 //
-//  Created by Felix Olivares on 5/2/15.
+//  Created by Felix Olivares on 5/18/15.
 //
 //
 
@@ -17,5 +17,6 @@
 @dynamic medicineKind;
 @dynamic periodicity;
 @dynamic unitsPerDose;
+@dynamic otherUser;
 
 @end

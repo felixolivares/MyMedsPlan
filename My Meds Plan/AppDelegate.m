@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MPColorTools.h"
 //#import "CoreData+MagicalRecord.h"
 
 @interface AppDelegate ()
@@ -19,7 +20,22 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]) {
+        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeSound|UIUserNotificationTypeBadge categories:nil]];
+    }
+    
     [MagicalRecord setupCoreDataStackWithStoreNamed:@"My_Meds_Plan"];
+    
+    application.applicationIconBadgeNumber = 0;
+    
+//    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRGB:0x63C3BA]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRGB:0x4CAAA0]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    
+    // Navbar buttons color
+    [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+
     
     return YES;
 }
@@ -46,7 +62,13 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+    [MagicalRecord cleanUp];
 }
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+    application.applicationIconBadgeNumber = 0;
+}
+
 
 #pragma mark - Core Data stack
 

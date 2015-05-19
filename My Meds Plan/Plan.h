@@ -2,7 +2,7 @@
 //  Plan.h
 //  
 //
-//  Created by Felix Olivares on 5/2/15.
+//  Created by Felix Olivares on 5/18/15.
 //
 //
 
@@ -18,5 +18,6 @@
 @property (nonatomic, retain) NSString * medicineKind;
 @property (nonatomic, retain) NSNumber * periodicity;
 @property (nonatomic, retain) NSNumber * unitsPerDose;
+@property (nonatomic, retain) NSString * otherUser;
 
 @end
